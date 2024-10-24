@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import LocaleSwitcher from "@/components/LocaleSwitcher";
 import Navigation from "@/components/Navigation";
+import CookieConsentManager from "@/components/CookieConsentManager";
 
 export default async function LocaleLayout({
   children,
@@ -25,6 +26,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <CookieConsentManager />
           <LocaleSwitcher />
           <Navigation />
           {children}
