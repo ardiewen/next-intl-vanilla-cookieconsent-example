@@ -2,5 +2,8 @@
   "HomePage": {
     "title": "Bonjour toute le monde!",
     "about": "Go to the about page"
+  },
+  "Page": {
+    "title": "Titre de la page"
   }
 }
